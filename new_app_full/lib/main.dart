@@ -21,10 +21,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Color(0XFF1F41BB)),
         useMaterial3: false,
       ),
-      home: OnBoardingScreen(),
+
+      home: splashScreen(),
+      // home: OnBoardingScreen(),
       // home: loginScreen(),
       // home: signUpScreen(),
-      // home: splashScreen(),
     );
   }
 }

@@ -17,24 +17,25 @@ class OnBoardingScreen extends StatelessWidget {
               height: 10,
             ),
             UiHelper.CustomText(
-                text: "Discover Your",
+                text: "Stay Informed ",
                 color: Color(0XFF1F41BB),
                 fontsize: 25,
                 fontWeight: FontWeight.bold),
             UiHelper.CustomText(
-                text: "Dream Job Here",
+                text: "with the Latest Updates",
                 color: Color(0XFF1F41BB),
                 fontsize: 25,
                 fontWeight: FontWeight.bold),
             SizedBox(height: 10),
             UiHelper.CustomText(
-              text: "Explain all the existing job roles based on your",
+              text:
+                  "Your one-stop destination for breaking news, trending stories,",
               // color: Color(0XFF1F41BB),
               fontsize: 12,
               // fontWeight: FontWeight.bold
             ),
             UiHelper.CustomText(
-              text: "interest and study major",
+              text: "and in-depth analysis across the globe.",
               // color: Color(0XFF1F41BB),
               fontsize: 12,
               // fontWeight: FontWeight.bold
@@ -57,7 +58,6 @@ class OnBoardingScreen extends StatelessWidget {
           ],
         ),
       ),
-      
     );
   }
 }

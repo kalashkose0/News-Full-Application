@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-// import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class UiHelper {
   // static CustomTextField({required TextEditingController controller})
@@ -67,7 +67,7 @@ class UiHelper {
       width: 330,
       decoration: BoxDecoration(
           color: Color(0XFFF1F4FF),
-          border: Border.all(color: Color(0XFF1F41BB)),
+          // sborder: Border.all(color: Color(0XFF1F41BB)),
           borderRadius: BorderRadius.circular(7)),
       child: Padding(
         padding: const EdgeInsets.only(

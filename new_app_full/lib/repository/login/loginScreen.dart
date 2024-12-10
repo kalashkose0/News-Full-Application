@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:new_app_full/repository/signup/signUpScreen.dart';
 import 'package:new_app_full/widgets/uihelper.dart';
 
@@ -68,18 +69,30 @@ class loginScreen extends StatelessWidget {
             SizedBox(
               height: 15,
             ),
-            UiHelper.CustomButton(callback: () {}, text: "Sign In")
+            UiHelper.CustomButton(
+                callback: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => signUpScreen()));
+                },
+                text: "Sign In")
           ],
         ),
       ),
-      floatingActionButton: UiHelper.customTextButton(
-        callback: () {
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
           Navigator.pushReplacement(
-              context, MaterialPageRoute(builder: (context) => signUpScreen()));
+            context,
+            MaterialPageRoute(builder: (context) => signUpScreen()),
+          );
         },
-        text: "Create new account",
-        fontsize: 15,
-        color: Color(0XFF000000),
+        label: Text(
+          "Create new account",
+          style: TextStyle(
+              fontSize: 15,
+              color: Color(0XFF000000),
+              fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.white,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
