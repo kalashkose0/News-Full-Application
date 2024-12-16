@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:new_app_full/domain/appException.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
-
 import '../../domain/constants/app_preference.dart';
 
 class ApiHelper {
