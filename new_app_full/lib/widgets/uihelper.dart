@@ -106,4 +106,7 @@ class UiHelper {
               color: color ?? Color(0XFF000000)),
         ));
   }
+
+  static customSnakBar({required String text})
+
 }
